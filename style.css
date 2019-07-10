@@ -1,0 +1,135 @@
+body {
+  background-color:#107870;
+}
+#cat{
+    width : 480px;
+    margin : 20px auto;
+}
+#head{
+    width :400px;
+    height :370px;    
+    background-color : #222222;
+    border-radius : 50%;
+    margin : auto;
+}
+#ears{
+    height : 65px;
+    position : relative;
+    left : 35px;
+    animation : ear_move 1s alternate-reverse infinite;
+}
+@keyframes ear_move{
+    from{
+        top : 0;
+    }
+    to{
+        top : 25px;
+    }
+}
+.ear{
+    width : 0px;
+    height : 0px;
+    border-left : 90px solid transparent;
+    border-right : 90px solid transparent;
+    border-bottom : 160px solid #222222;
+    float : left;
+    margin-right : 60px;
+    transform: rotate(35deg);
+}
+.ear:first-child{
+    transform: rotate(-35deg);
+}
+.innerear1{
+     border-left : 90px solid transparent;
+    border-right : 90px solid transparent;
+    border-bottom : 160px solid #ffffff;
+    transform : scale(0.3);
+    position : relative;
+    margin-left : -89px;
+    margin-top : -10px;
+}
+.innerear2{
+     border-left : 90px solid transparent;
+    border-right : 90px solid transparent;
+    border-bottom : 160px solid #ffffff;
+    transform : scale(0.3);
+    position : relative;
+    margin-left : -90px;
+    margin-top : -10px;
+}
+#eyes{
+    clear : both;
+    width : 350px;
+    position : relative;
+    top : 25px;
+    left : 53px;
+}
+.eye{
+    width : 120px;
+    height : 120px;
+    border-radius : 50%;
+    background-color: #ffffff;
+    float : left;
+
+}
+.eye:first-child{
+    margin-right : 50px;
+}
+.pupil{
+    width : 80px;
+    height : 80px;
+    position : relative;
+    border-radius : 50%;
+    background-color : #000000;
+    top :40px;
+    animation : eye_move 1s alternate-reverse infinite;
+}
+@keyframes eye_move{
+    from{
+        left : 40px;
+    }
+    to{
+        left : 0px;
+    }
+}
+
+.inner_pupil{
+    width : 35px;
+    height : 35px;
+    position : relative;
+    border-radius : 45%;
+    background-color : #ffffff;
+    top :40px;
+    left : 15px;
+}
+#nose{
+    width : 45px;
+    height : 30px;
+    position :relative;
+    border-radius : 50%;
+    background-color : #ffffff;
+    top : 160px;
+    left : 170px;
+}
+#mus_l{
+    position : relative;
+    top :100px;
+    left : -60px;
+    transform : rotate(-10deg);
+}
+#mus_r{
+    position : relative;
+    top :162px;
+    left : 215px;
+    transform : rotate(10deg);
+}
+.mus{
+    width : 220px;
+    height : 5px;
+    position :relative;
+    border : solid 3px #000000;
+    border-color:#fff transparent transparent transparent;
+    border-radius: 60%/30px 30px 0 0;
+}
+
+
